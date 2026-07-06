@@ -10,24 +10,24 @@ const SearchBar = ({ onSearch, searchResult, setSearchResult }) => {
     if (localTimeLeft === null) return;
 
     if (localTimeLeft === 0) {
-      // 🛑 रितिक भाई का लॉजिक: 30 सेकंड खत्म होते ही स्टेट को बदल दो और डेटा छुपा दो
+    
       setSearchResult({
         status: "EXPIRED",
         error: "Data Removed from Cache & Time is Ended"
       });
-      setLocalTimeLeft(null); // टाइमर को वापस रोक दो
+      setLocalTimeLeft(null); 
       return;
     }
 
-    // हर 1 सेकंड में लोकल टाइमर को 1 से घटाना (Tick-Tick Countdown)
+    
     const timer = setTimeout(() => {
       setLocalTimeLeft(prev => prev - 1);
     }, 1000);
 
-    return () => clearTimeout(timer); // क्लीनअप
+    return () => clearTimeout(timer); 
   }, [localTimeLeft, setSearchResult]);
 
-  // जब पैरेंट (App.jsx) से नया सर्च रिजल्ट आएगा, तो लोकल टाइमर को सिंक करो
+  
   useEffect(() => {
     if (searchResult && searchResult.timeLeft !== undefined) {
       setLocalTimeLeft(searchResult.timeLeft);
