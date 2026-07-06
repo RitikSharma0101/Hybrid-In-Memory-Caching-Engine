@@ -1,0 +1,53 @@
+.appContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+}
+
+.appHeader {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 0.75rem;
+}
+
+.appHeader h1 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.appHeader p {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.dashboardLayout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.leftColumn, .rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-wrap: wrap ;
+}
+
+@media (max-width: 768px) {
+  .dashboardLayout {
+    grid-template-columns: 1fr;
+  }
+  .appContainer{
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .appHeader h1{
+    font-size: 1rem;
+  }
+  .appHeader p{
+    font-size: 0.75rem ;
+  }
+}

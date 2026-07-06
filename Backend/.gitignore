@@ -1,0 +1,17 @@
+# Ignore dependency folders (very large)
+node_modules/
+bower_components/
+
+# Ignore local environment/secret files (never push passwords!)
+# .env
+# .env.local
+# *.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore build outputs or log files
+dist/
+build/
+*.log

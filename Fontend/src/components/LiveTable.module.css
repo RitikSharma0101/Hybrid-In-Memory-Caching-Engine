@@ -1,0 +1,105 @@
+.tableCard {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tableTitle {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.5rem;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.mainTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.mainTable th {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #334155;
+}
+
+.tableRow {
+  border-bottom: 1px solid #334155;
+  transition: background-color 0.2s;
+}
+
+.tableRow:hover {
+  background-color: #1e293b;
+  background: rgba(56, 189, 248, 0.03);
+}
+
+.mainTable td {
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+.idBadge {
+  background-color: #334155;
+  color: #f8fafc;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.jsonCode {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  background-color: #0f172a;
+  padding: 0.5rem;
+  border-radius: 6px;
+  max-height: 100px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.ttlBadge {
+  background-color: rgba(234, 179, 8, 0.1);
+  color: #eab308; 
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #0f172a;
+  border-radius: 8px;
+  border: 1px dashed #334155;
+}
+
+.emptyState p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.emptyState span {
+  color: #64748b;
+  font-size: 0.85rem;
+}

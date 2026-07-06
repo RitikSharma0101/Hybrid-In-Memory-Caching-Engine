@@ -1,0 +1,98 @@
+.formCard {
+  background-color: #1e293b; 
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 0.75rem;
+  width:fit-content;
+  margin: 0 auto;
+}
+
+.formTitle {
+  font-size: 1rem;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.2rem;
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  
+  
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.inputGroup input, 
+.inputGroup textarea {
+  background-color: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.inputGroup input:focus, 
+.inputGroup textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px #38bdf8;
+}
+
+.inputGroup textarea {
+  resize:none;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-y: auto;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.submitBtn {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  max-height: 3rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 2rem;
+}
+
+.submitBtn:hover {
+  background-color: #0369a1;
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+@media (max-width: 768px) {
+  .mainForm{
+    flex-direction: column;
+  }
+  .inputGroup{
+    width: 100%;
+  }
+  .submitBtn{
+    width: 100%;
+  }
+}
